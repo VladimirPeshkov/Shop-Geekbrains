@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="header"></header>
-        <main class="main"></main>
-        <footer class="footer"></footer>
+      <header class="header">
+        <div class="header__left">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="images/logo.svg" alt="logo" />
+          </a>
+          <input class="search" type="search" name="search" id="search" />
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <button class="main-nav__button header-menu-button">
+                <img
+                  class="main-nav__icon"
+                  src="images/icon-menu.svg"
+                  alt="menu"
+                />
+              </button>
+            </li>
+            <li class="main-nav__item">
+              <button class="main-nav__button header-profile-button">
+                <img
+                  class="main-nav__icon"
+                  src="images/icon-profile.svg"
+                  alt="profile"
+                />
+              </button>
+            </li>
+            <li class="main-nav__item cart">
+              <button class="main-nav__button header-cart-button">
+                <img
+                  class="main-nav__icon"
+                  src="images/icon-cart.svg"
+                  alt="cart"
+                />
+              </button>
+              <div class="quantity-product-in-cart">5</div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="banner">
+          <img class="banner__image" src="" alt="" />
+        </section>
+      </main>
+      <footer class="footer"></footer>
     </div>
-</body>
+  </body>
 </html>
