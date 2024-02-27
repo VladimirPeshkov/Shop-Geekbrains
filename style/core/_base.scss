@@ -1,0 +1,25 @@
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100vh;
+}
+@media screen and (min-width: $width-desctop) {
+  .wrapper {
+    width: $width-desctop;
+  }
+}
+
+@media screen and (max-width: $width-desctop) {
+  .wrapper {
+    width: $width-tablet;
+  }
+}
+
+@media screen and (max-width: $width-tablet) {
+  .wrapper {
+    max-width: $width-mobile;
+  }
+}

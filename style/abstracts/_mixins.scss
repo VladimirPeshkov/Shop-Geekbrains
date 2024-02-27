@@ -1,0 +1,21 @@
+@mixin button($width, $bg-color, $font-color) {
+  max-width: $width;
+  background: $bg-color;
+  color: $font-color;
+}
+
+@mixin font(
+  $size,
+  $line-height,
+  $color,
+  $weight: $font-weight-regular,
+  $style: normal,
+  $letter-spacing: 0
+) {
+  font-family: Lato;
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  font-style: $style;
+  letter-spacing: $letter-spacing;
+}
