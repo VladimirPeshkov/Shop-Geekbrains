@@ -1,56 +1,62 @@
 @font-face {
   font-family: Lato;
-  font-weight: 900;
-  font-style: normal;
-  src: url("../../fonts/Lato-Black.ttf");
-}
-@font-face {
-  font-family: Lato;
-  font-weight: 900;
-  font-style: italic;
-  src: url("../../fonts/Lato-BlackItalic.ttf");
-}
-@font-face {
-  font-family: Lato;
-  font-weight: bold;
-  font-style: normal;
-  src: url("../../fonts/Lato-Bold.ttf");
-}
-@font-face {
-  font-family: Lato;
-  font-weight: bold;
-  font-style: italic;
-  src: url("../../fonts/Lato-BlackItalic.ttf");
-}
-@font-face {
-  font-family: Lato;
-  font-weight: normal;
-  font-style: italic;
-  src: url("../../fonts/Lato-Italic.ttf");
-}
-@font-face {
-  font-family: Lato;
-  font-weight: light;
-  font-style: italic;
-  src: url("../../fonts/Lato-LightItalic.ttf");
-}
-@font-face {
-  font-family: Lato;
-  font-weight: normal;
-  font-style: normal;
-  src: url("../../fonts/Lato-Regular.ttf");
-}
-@font-face {
-  font-family: Lato;
-  font-weight: 100;
-  font-style: normal;
   src: url("../../fonts/Lato-Thin.ttf");
+  font-weight: 100;
+  font-style: normal;
 }
 @font-face {
   font-family: Lato;
+  src: url("../../fonts/Lato-ThinItalic.ttf");
   font-weight: 100;
   font-style: italic;
-  src: url("../../fonts/Lato-ThinItalic.ttf");
+}
+@font-face {
+  font-family: Lato;
+  src: url("../../fonts/Lato-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../../fonts/Lato-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../../fonts/Lato-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../../fonts/Lato-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../../fonts/Lato-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../../fonts/Lato-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../../fonts/Lato-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../../fonts/Lato-BoldItalic.ttf");
+  font-weight: 900;
+  font-style: italic;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.2 | 20191019
@@ -199,13 +205,33 @@ table {
   box-sizing: border-box;
 }
 
-.wrapper {
-  margin: 0 auto;
+button {
+  padding: 0;
+  border: 0;
+  background: inherit;
+}
+
+input {
+  border: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-between;
-  height: 100vh;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.search__wrapp {
+  margin-left: 41px;
 }
 
 @media screen and (min-width: 1142px) {
@@ -222,4 +248,406 @@ table {
   .wrapper {
     max-width: 344px;
   }
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.search__input--invisible {
+  width: 0;
+}
+
+.main-nav__list {
+  display: flex;
+  gap: 33px;
+  align-items: center;
+}
+
+.main-menu__button {
+  background-color: rgb(34, 34, 34);
+}
+.main-menu__img:hover path {
+  fill: rgb(241, 109, 127);
+}
+
+.profile-menu__button {
+  background-color: rgb(34, 34, 34);
+}
+.profile-menu__img:hover path {
+  fill: rgb(241, 109, 127);
+}
+
+.cart-window {
+  position: relative;
+}
+.cart-window__button {
+  background-color: rgb(34, 34, 34);
+  padding-right: 9px;
+}
+.cart-window__quantity {
+  position: absolute;
+  right: 0;
+  top: -9px;
+  background-color: rgb(241, 109, 127);
+  width: 19px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-family: Lato;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  overflow: hidden;
+}
+.cart-window__img:hover path {
+  fill: rgb(241, 109, 127);
+}
+
+.product-card {
+  max-width: 360px;
+  background-color: rgb(251, 251, 251);
+}
+.product-card__information {
+  text-align: left;
+  padding: 25px 29px 20px 16px;
+}
+.product-card__title {
+  font-family: Lato;
+  font-size: 13px;
+  color: rgb(34, 34, 34);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+}
+.product-card__description {
+  margin-top: 13px;
+  font-family: Lato;
+  font-size: 13px;
+  color: rgb(111, 110, 110);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+}
+.product-card__price {
+  margin-top: 18px;
+  font-family: Lato;
+  font-size: 16px;
+  color: rgb(241, 109, 127);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe__label {
+  text-align: center;
+  font-family: Lato;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0;
+}
+.subscribe__text {
+  display: block;
+  font-family: Lato;
+  font-size: 18px;
+  color: rgb(34, 34, 34);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  margin-top: 6px;
+}
+.subscribe__emeil {
+  font-family: Lato;
+  font-size: 14px;
+  color: rgb(111, 110, 110);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  padding: 12px 22px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: rgb(225, 225, 225);
+}
+.subscribe__button {
+  padding: 12px 20px;
+  background: rgb(241, 109, 127);
+  border: 1px solid rgb(241, 109, 127);
+  font-family: Lato;
+  font-size: 18px;
+  color: rgb(232, 232, 232);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition: 0.3s;
+}
+.subscribe__button:hover {
+  background-color: transparent;
+  color: rgb(241, 109, 127);
+}
+
+.wrap-form {
+  margin-top: 32px;
+  display: flex;
+}
+
+.social__list {
+  display: flex;
+  gap: 7px;
+}
+.social__link:hover .social__img path {
+  fill: rgb(241, 109, 127);
+}
+.social__link:hover path {
+  fill: rgb(232, 232, 232);
+}
+.header {
+  padding: 18px 0;
+  background-color: rgb(34, 34, 34);
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__left {
+  display: flex;
+  align-items: end;
+}
+
+.banner {
+  background-color: rgb(241, 228, 230);
+}
+.banner__wrap {
+  display: flex;
+  overflow: hidden;
+  align-items: flex-start;
+}
+.banner__title {
+  margin-top: 290px;
+  margin-left: 63px;
+  font-family: Lato;
+  font-size: 48px;
+  color: rgb(34, 34, 34);
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0;
+  padding: 16px 0 16px 16px;
+  border-left: 12px solid rgb(241, 109, 127);
+}
+.banner__text {
+  font-family: Lato;
+  font-size: 32px;
+  color: rgb(34, 34, 34);
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0;
+}
+.banner__text--color {
+  color: rgb(241, 109, 127);
+}
+.banner__image {
+  height: 764px;
+  order: -1;
+  margin-left: -210px;
+}
+
+.categories {
+  margin-top: 65px;
+}
+.categories__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.categories__item {
+  display: flex;
+  width: 360px;
+  min-height: 260px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.categories__item::after {
+  content: " ";
+  width: inherit;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(33, 22, 22, 0.7);
+}
+.categories__item--women {
+  background-image: url(../../images/woman.png);
+}
+.categories__item--man {
+  background-image: url(../../images/man.png);
+}
+.categories__item--kids {
+  background-image: url(../../images/kids.png);
+}
+.categories__item:last-child {
+  width: 100%;
+  min-height: 180px;
+  margin-top: 20px;
+  background-image: url(../../images/acces.png);
+}
+.categories__link {
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  color: rgb(232, 232, 232);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  z-index: 1;
+}
+.categories__title {
+  font-family: Lato;
+  font-size: 24px;
+  color: rgb(241, 109, 127);
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+.catalog {
+  margin-top: 96px;
+  text-align: center;
+}
+.catalog__title {
+  font-family: Lato;
+  font-size: 30px;
+  color: rgb(34, 34, 34);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+}
+.catalog__description {
+  font-family: Lato;
+  font-size: 14px;
+  color: rgb(159, 159, 159);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  margin-top: 6px;
+}
+.catalog__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+.catalog__link {
+  display: inline-flex;
+  margin-top: 48px;
+  padding: 14px 38px;
+  background: transparent;
+  border: 1px solid rgb(241, 109, 127);
+  font-family: Lato;
+  font-size: 16px;
+  color: rgb(241, 109, 127);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.advantages {
+  background-color: rgb(34, 34, 34);
+  padding: 104px 0;
+  margin-top: 95px;
+}
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages__item {
+  max-width: 360px;
+  text-align: center;
+  padding: 0 22px;
+}
+.advantages__title {
+  font-family: Lato;
+  font-size: 20px;
+  color: rgb(232, 232, 232);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  margin-top: 28px;
+}
+.advantages__icon {
+  order: -1;
+}
+.advantages__description {
+  font-family: Lato;
+  font-size: 14px;
+  color: rgb(159, 159, 159);
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0;
+  margin-top: 16px;
+}
+
+.review {
+  background-image: url("../../images/photo subscribe.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.review__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 97px 0 126px;
+}
+.review__left {
+  max-width: 360px;
+  text-align: center;
+}
+.review__user {
+  border-radius: 50%;
+}
+.review__blockquote {
+  text-align: center;
+  margin-top: 30px;
+  font-family: Lato;
+  font-size: 20px;
+  color: rgb(34, 34, 34);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+}
+.review__blockquote--fstyle {
+  font-style: italic;
+}
+
+.footer {
+  background-color: rgb(34, 34, 34);
+  padding: 24px 0;
+}
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__proprietary {
+  font-family: Lato;
+  font-size: 16px;
+  color: rgb(251, 251, 251);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
 }/*# sourceMappingURL=style.css.map */

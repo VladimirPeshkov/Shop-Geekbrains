@@ -1,0 +1,38 @@
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__label {
+    text-align: center;
+    @include font(24px, 2px, $color-black, 700);
+  }
+  &__text {
+    display: block;
+    @include font(18px, 2px, $color-black);
+    margin-top: 6px;
+  }
+  &__emeil {
+    @include font(14px, 17px, $color-grey-dark);
+    padding: 12px 22px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: rgb(225, 225, 225);
+  }
+  &__button {
+    @include button(12px, 20px, $color-rose);
+    @include font(18px, 2px, $color-white);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: transparent;
+      color: $color-rose;
+    }
+  }
+}
+
+.wrap-form {
+  margin-top: 32px;
+  display: flex;
+}

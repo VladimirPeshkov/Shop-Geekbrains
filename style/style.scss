@@ -5,8 +5,22 @@
 @import "core/reset";
 @import "core/base";
 
-// @import "components/product-card";
+@import "components/search";
+@import "components/main-nav";
+@import "components/main-menu";
+@import "components/profile-menu";
+@import "components/cart-window";
+@import "components/product-card";
+@import "components/subscribe";
+@import "components/_socilal.scss";
 
 @import "layout/header";
+@import "layout/main";
+@import "layout/bunner";
+@import "layout/categories";
+@import "layout/catalog";
+@import "layout/advantages";
+@import "layout/review";
+@import "layout/footer";
 
 // @import "pages"

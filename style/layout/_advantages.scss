@@ -1,0 +1,26 @@
+.advantages {
+  background-color: $color-black;
+  padding: 104px 0;
+  margin-top: 95px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 360px;
+    text-align: center;
+    padding: 0 22px;
+  }
+  &__title {
+    @include font(20px, 24px, $color-white);
+    margin-top: 28px;
+  }
+  &__icon {
+    order: -1;
+  }
+  &__description {
+    @include font(14px, 17px, $color-grey, 300);
+    margin-top: 16px;
+  }
+}

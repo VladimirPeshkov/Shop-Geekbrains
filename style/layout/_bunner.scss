@@ -1,0 +1,26 @@
+.banner {
+  background-color: rgb(241, 228, 230);
+  &__wrap {
+    display: flex;
+    overflow: hidden;
+    align-items: flex-start;
+  }
+  &__title {
+    margin-top: 290px;
+    margin-left: 63px;
+    @include font(48px, 92px, $color-black, 900);
+    padding: 16px 0 16px 16px;
+    border-left: 12px solid $color-rose;
+  }
+  &__text {
+    @include font(32px, 0px, $color-black, 700);
+  }
+  &__text--color {
+    color: $color-rose;
+  }
+  &__image {
+    height: 764px;
+    order: -1;
+    margin-left: -210px;
+  }
+}

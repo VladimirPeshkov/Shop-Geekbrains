@@ -1,0 +1,27 @@
+.product-card {
+  max-width: 360px;
+  background-color: $color-grey-light;
+
+  &__information {
+    text-align: left;
+    padding: 25px 29px 20px 16px;
+  }
+
+  &__link {
+  }
+  &__title {
+    @include font(13px, 16px, $color-black);
+  }
+  &__img {
+  }
+  &__description {
+    margin-top: 13px;
+    @include font(13px, 16px, $color-grey-dark);
+  }
+  &__price {
+    margin-top: 18px;
+    @include font(16px, 19px, $color-rose);
+  }
+  &__sum {
+  }
+}

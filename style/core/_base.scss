@@ -1,11 +1,18 @@
-.wrapper {
-  margin: 0 auto;
+.container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-between;
-  height: 100vh;
 }
+.wrapper {
+  margin: 0 auto;
+}
+
+.search__wrapp {
+  margin-left: 41px;
+}
+
+
+
 @media screen and (min-width: $width-desctop) {
   .wrapper {
     width: $width-desctop;

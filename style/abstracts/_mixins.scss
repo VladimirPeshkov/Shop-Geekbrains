@@ -1,14 +1,19 @@
-@mixin button($width, $bg-color, $font-color) {
-  max-width: $width;
+@mixin button(
+  $padding-vertical,
+  $padding-horizontal,
+  $bg-color,
+  $border-color: $bg-color
+) {
+  padding: $padding-vertical $padding-horizontal;
   background: $bg-color;
-  color: $font-color;
+  border: 1px solid $border-color;
 }
 
 @mixin font(
   $size,
   $line-height,
   $color,
-  $weight: $font-weight-regular,
+  $weight: 400,
   $style: normal,
   $letter-spacing: 0
 ) {

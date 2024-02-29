@@ -1,0 +1,9 @@
+.search {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &__input--invisible {
+    width: 0;
+  }
+}

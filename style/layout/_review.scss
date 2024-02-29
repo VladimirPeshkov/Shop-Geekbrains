@@ -1,0 +1,30 @@
+.review {
+  background-image: url("../../images/photo subscribe.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 97px 0 126px;
+  }
+  &__left {
+    max-width: 360px;
+    text-align: center;
+  }
+  &__user {
+    border-radius: 50%;
+  }
+  &__blockquote {
+    text-align: center;
+    margin-top: 30px;
+    @include font(20px, 24px, $color-black);
+
+    &--fstyle {
+      font-style: italic;
+    }
+  }
+}

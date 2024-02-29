@@ -1,0 +1,25 @@
+.cart-window {
+  position: relative;
+  &__button {
+    background-color: $color-black;
+    padding-right: 9px;
+  }
+  &__quantity {
+    position: absolute;
+    right: 0;
+    top: -9px;
+    background-color: $color-rose;
+    width: 19px;
+    height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    @include font(12px, 14px, #fff);
+    overflow: hidden;
+  }
+
+  &__img:hover path {
+    fill: $color-rose;
+  }
+}

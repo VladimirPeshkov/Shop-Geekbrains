@@ -138,3 +138,18 @@ table {
 * {
   box-sizing: border-box;
 }
+
+button {
+  padding: 0;
+  border: 0;
+  background: inherit;
+}
+
+input {
+  border: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}

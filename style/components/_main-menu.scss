@@ -1,0 +1,9 @@
+.main-menu {
+  &__button {
+    background-color: $color-black;
+  }
+
+  &__img:hover path {
+    fill: $color-rose;
+  }
+}

@@ -1,0 +1,20 @@
+.social {
+  &__list {
+    display: flex;
+    gap: 7px;
+  }
+  &__item {
+  }
+  &__link {
+    &:hover .social__img path {
+      fill: $color-rose;
+    }
+
+    &:hover path {
+      fill: $color-white;
+    }
+  }
+
+  &__img {
+  }
+}
