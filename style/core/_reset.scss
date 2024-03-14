@@ -145,9 +145,17 @@ button {
   background: inherit;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 input {
   border: none;
   padding: 0;
+}
+
+input[type="button"]:hover{
+  cursor: pointer;
 }
 
 a {

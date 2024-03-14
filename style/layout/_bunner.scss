@@ -1,9 +1,12 @@
 .banner {
+  position: relative;
   background-color: rgb(241, 228, 230);
+
   &__wrap {
     display: flex;
     overflow: hidden;
     align-items: flex-start;
+    position: relative;
   }
   &__title {
     margin-top: 290px;

@@ -1,9 +1,60 @@
 .main-menu {
+  
   &__button {
     background-color: $color-black;
   }
 
   &__img:hover path {
     fill: $color-rose;
+  }
+
+  &__list{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 16px 16px 16px 33px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+
+    &--hidden{
+      width: 0;
+      padding: 0;
+    }
+  }
+
+  &__closed {
+    display: block;
+    margin-left: auto;
+    transition: color 0.3s;
+
+    &:hover{
+      color: $color-rose;
+    }
+  }
+
+&__category{
+  margin-top: 20px;
+  padding-right: 44px;
+}
+
+  &__category-button {
+    display: block;
+    @include font(14px, 17px, $color-rose)
+  }
+
+&__item{
+  margin-top: 11px;
+  padding-left: 21px;
+}
+
+  &__link{
+    @include font(14px, 17px, $color-grey-dark);
+    transition: color 0.3s;
+
+    &:hover{
+      color: $color-rose;
+    }
   }
 }
